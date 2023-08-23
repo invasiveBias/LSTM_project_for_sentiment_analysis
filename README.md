@@ -1,6 +1,7 @@
-# LSTM_project_for_financial_news_sentiment
-This is a project to develop a Long-Short Term Memory Model to track sentiment(positive,negative and neutral) from financial news data. The model runs the data through an embeddimg layer,which goes through two LSTM layers before feeding the output through a linear layer.
+# LSTM_project_for_sentiment_analysis
+This is project entails the development of Long Short Term Memory networks to perform sentiment analysis. The model architecture recieves the input data & moves it through an embedding layer, two LSTM layers and then a final linear output layer.
+The project contains 2 seperate notebooks, one representing sentiment analysis for financial news data & the other for product review data.
 The project is split into Data analysis, pre_processing, model training & evaluation.
-The model was developed with the Keras library & notable sub-modules are Sequential,Layers and Callbacks, libraries used for Data analysis & feature engineering include, Pandas,seaborn,re,Keras.preprocessing & sklean.model_selection(for train_test_split).
-The training dataset (lstm_main) was a combination of smaller locally sourced datasets while the validation dataset(lstm_sub) was sourced from kaggle.
-The project was ran on a local CPU machine, GPU/TPU power machines are recommended for faster trainning time.
+The same model architecture was built for both notebooks & they were developed with the Keras library, notable sub-modules include Sequential,Layers and Callbacks,libraries used for Data analysis & feature engineering include, Pandas,seaborn,re,Keras.preprocessing,sklearn.feature_extraction & sklean.model_selection(for train_test_split).
+3 datasets were used in this project,lstm_main is the training dataset of the financial sentiment model and a combination of smaller locally sourced datasets,lstm_sub is the validation dataset of the financial sentiment model and was sourced from kaggle,Amazon_reviews represent both the training & validation dataset for the prodict sentiment model and was also sourced from kaggle, all 3 datasets contain only the text and label columns.
+The financial sentiment notebook was run locally with jupyter on a CPU machine while the product sentiment notebook was built on google collab powered by a GPU.
